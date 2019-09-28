@@ -1,0 +1,61 @@
+<!--Es para mandar a llamar nuestro template ya creado con base.html-->
+{% extends 'core/base.html' %}
+
+{% block title %}Reportes{% endblock %}
+
+{% block background %}{% load static %}{% static 'core/img/reportes1.jpg' %}{% endblock %}
+
+{% block headers %}
+    <h1>Reportes</h1>
+    <span class="subheading">Selección de reportes</span>
+{% endblock %}
+
+{% block content %} 
+
+<link href="{% static 'core/css/formularios.css' %}" rel="stylesheet">
+ <!-- Contenido Principal -->
+    <div class="container">
+	<!-- Historico de Venta -->
+	    <div class="row project">  	
+	      	<div class="col-lg-3 col-md-4 offset-lg-1">
+			      <img class="img-fluid" src="{% static 'core/img/ventas4.jpg' %}" alt="">
+	      	</div>
+	        <div class="col-lg-7 col-md-8">
+	      	    <h2 class="section-heading title">Historico de Ventas</h2>   
+	                <p><a href="http://google.com">Más información</a></p>
+	        </div>
+	    </div>
+	<!-- Historico de compra -->
+	    <div class="row project">  	
+	      	<div class="col-lg-3 col-md-4 offset-lg-1">
+			      <img class="img-fluid" src="{% static 'core/img/compras.png' %}" alt="">
+	        </div>
+	        <div class="col-lg-7 col-md-8">
+	      		<h2 class="section-heading title">Historico de Compras</h2>   
+	                <p><a href="http://google.com">Más información</a></p>
+	        </div>
+	    </div>
+	<!-- Historico de Venta y Compra -->
+	    <div class="row project">  	
+	      	<div class="col-lg-3 col-md-4 offset-lg-1">
+			      <img class="img-fluid" src="{% static 'core/img/ventascomp.png' %}" alt="">
+	        </div>
+	        <div class="col-lg-7 col-md-8">
+	      		<h2 class="section-heading title">Historico de Compras vs Ventas</h2>   
+	                <p><a href="http://google.com">Más información</a></p>
+	        </div>
+	    </div>
+	</div> 
+
+<!-- Registro de clientes -->
+	    <div class="row project">  	
+	      	<div class="col-lg-3 col-md-4 offset-lg-1">
+			      <img class="img-fluid" src="{% static 'core/img/registroclientes.png' %}" alt="">
+	        </div>
+	        <div class="col-lg-7 col-md-8">
+	      		<h2 class="section-heading title">Registro de clientes</h2>   
+	                <p><a href="http://google.com">Más información</a></p>
+	        </div>
+	    </div>
+	</div>   
+{% endblock %}

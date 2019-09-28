@@ -1,0 +1,92 @@
+<!--Es para mandar a llamar nuestro template ya creado con base.html-->
+{% extends 'core/base.html' %}
+
+{% block title %}Clientes{% endblock %}
+
+{% block background %}{% load static %}{% static 'core/img/clientes.jpg' %}{% endblock %}
+
+{% block headers %}
+    <h1>Clientes</h1>
+    <span class="subheading">Registro de clientes</span>
+{% endblock %}
+
+{% block content %}
+
+<head>
+	<meta charset="UTF-8">
+	<title>Formulario de Contacto</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, 
+	maximun-scale=1.0, minimun-scale=1.0">
+    {% load static %}
+    <link href="{% static 'core/css/formularios.css' %}" rel="stylesheet">
+</head>
+<body>
+	<div class="contenedor">
+		<form action="" class="form">
+			<div class="form-header">
+				<h1 class="form-title">C<span>ontacto</span></h1>
+
+            <label for="nombre" class="form-label">Nombres:</label>
+			<input type="text" class="form-input" placeholder="Escriba su nombre">
+
+			<label for="apellidoP" class="form-label">Apellido Paterno:</label>
+			<input type="text" class="form-input" placeholder="Escriba su apellido paterno">
+
+			<label for="apellidoM" class="form-label">Apellido Materno:</label>
+			<input type="text" class="form-input" placeholder="Escriba su apellido materno">
+
+			<label for="colonia" class="form-label">Colonia:</label>
+			<input type="text" class="form-input" placeholder="Escriba su colonia">
+
+			<label for="calle" class="form-label">Calle:</label>
+			<input type="text" class="form-input" placeholder="Escriba su calle">
+
+			<label for="nExterior" class="form-label">No. Exterior:</label>
+			<input type="text" class="form-input" placeholder="Escriba su número Exterior">
+
+			<label for="nInterior" class="form-label">No. Interior:</label>
+			<input type="text" class="form-input" placeholder="Escriba su número interior">
+
+			<label for="cp" class="form-label">Código Postal:</label>
+			<input type="text" class="form-input" placeholder="Escriba su código postal">
+
+			<label for="telefono" class="form-label">Télefono:</label>
+			<input type="text" class="form-input" placeholder="Escriba su télefono">
+            
+            <div class="botones">
+                <input type="submit" class="btn-submit" value="Ingresar">
+                <input type="submit" class="btn-submit" value="Buscar">
+                <input type="submit" class="btn-submit" value="Actualizar">
+                <input type="submit" class="btn-submit" value="Eliminar">
+
+        </form>
+	
+    <!--</div>
+	<div class="botones">
+		<form action="" class="form">
+			<div class="form-ingresa">
+				<input type="submit" class="btn-submit" value="Ingresar">
+			</div>
+			<div class="form-busca">
+				<input type="submit" class="btn-submit" value="Buscar">
+			</div>
+			<div class="form-actualiza">
+				<input type="submit" class="btn-submit" value="Actualizar">
+			</div>			
+			<div class="form-elimina">
+				<input type="submit" class="btn-submit" value="Eliminar">
+			</div>
+		</form>
+	</div>-->
+
+</body>
+
+<!--
+<table>
+    {{form.as_table}}
+<table>-->
+
+{% endblock %}    
+
+
+

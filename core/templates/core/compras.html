@@ -1,0 +1,47 @@
+{% extends 'core/base.html' %}
+
+{% block title %}Compras{% endblock %}
+
+{% block background %}{% load static %}{% static 'core/img/compras.jpg' %}{% endblock %}
+
+{% block headers %}
+    <h1>Compras</h1>
+    <span class="subheading">Registro de compras</span>
+{% endblock %}
+
+{% block content %}          
+<head>
+	<meta charset="UTF-8">
+	<title>Formulario de Contacto</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, 
+	maximun-scale=1.0, minimun-scale=1.0">
+    {% load static %}
+    <link href="{% static 'core/css/formularios.css' %}" rel="stylesheet">
+</head>
+<body>
+	<div class="contenedor">
+		<form action="" class="form">
+
+            <label for="Fecha" class="form-label">Fecha:</label>
+			<input type="date" class="form-input">
+
+			<label for="cantidad" class="form-label">cantidad:</label>
+			<input type="number" class="form-input" placeholder="Escriba la cantidad">
+
+			<label for="precio" class="form-label">Precio:</label>
+			<input type="number" step="0.01" class="form-input" placeholder="Escriba el precio">
+
+			<label for="Total" class="form-label">Total Compra:</label>
+			<input type="number" step= "0.01" class="form-input">
+			
+			<div class="botones">
+                <input type="submit" class="btn-submit" value="Ingresar">
+
+		</form>
+</body>
+
+{% endblock %}
+
+
+
+
